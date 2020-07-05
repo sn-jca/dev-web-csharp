@@ -1,0 +1,34 @@
+[
+  {
+    "Id": 1,
+    "Marque": "citroen",
+    "Annee": 2019,
+    "Categorie": "A",
+    "Carburant": "essence",
+    "Disponible": false
+  },
+  {
+    "Id": 2,
+    "Marque": "peugeot",
+    "Annee": 2020,
+    "Categorie": "B",
+    "Carburant": "diesel",
+    "Disponible": true
+  },
+  {
+    "Id": 3,
+    "Marque": "renault",
+    "Annee": 2018,
+    "Categorie": "A",
+    "Carburant": "essence",
+    "Disponible": true
+  },
+  {
+    "Id": 4,
+    "Marque": "audi",
+    "Annee": 2020,
+    "Categorie": "L",
+    "Carburant": "essence",
+    "Disponible": false
+  }
+]
