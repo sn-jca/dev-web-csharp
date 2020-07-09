@@ -14,7 +14,8 @@ namespace myWebAppHTTPS.Pages
     {
         private readonly ILogger<IndexModel> _logger;
 
-        public JsonFileCarService CarServive { get; }
+
+        public JsonFileCarService CarService { get; }
 
         [BindProperty]
         public Car Car { get; set; }
@@ -24,19 +25,18 @@ namespace myWebAppHTTPS.Pages
         public CarsModel(ILogger<IndexModel> logger, JsonFileCarService carService)
         {
             _logger = logger;
-            CarServive = carService;
+            CarService = carService;
         }
 
         public void OnGet()
         {
-
-            Cars = CarServive.GetCars();
+            Cars = CarService.GetCars();
 
         }
 
         public IActionResult OnPost()
         {
-            CarServive.addCar(Car);
+            CarService.addCar(Car);
             return RedirectToPage("./Cars");
         }
 
