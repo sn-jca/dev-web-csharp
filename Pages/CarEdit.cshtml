@@ -1,0 +1,48 @@
+@page "{id:int}"
+@model CarEditModel
+@{
+    ViewData["Title"] = "Flotte de voitures";
+}
+
+
+<div class="container">
+
+<div class="text-center">
+    <h1 class="display-4">Détails</h1>
+    <p>RegineRent@Car</p>
+</div>
+
+
+<br>
+<br>
+
+
+        <form method="POST">
+            <div class="form-group">
+                <label for="idCar">Numéro</label>
+                <input class="form-control" id="idCar" asp-for="Car.Id"/>
+              </div>  
+              <div class="form-group">
+                <label for="annee">Annee</label>
+                <input class="form-control" id="annee" asp-for="Car.Annee"/>
+              </div>  
+              <div class="form-group">
+                <label for="marque">Marque</label>
+                <input class="form-control" id="marque" asp-for="Car.Marque"/>
+              </div>                
+              <div class="form-group">
+                <label for="categorie">Categorie</label>
+                <input class="form-control" id="categorie" asp-for="Car.Categorie"/>
+              </div>   
+              <div class="form-group">
+                <label for="carburant">Carburant</label>
+                <input class="form-control" id="carburant" asp-for="Car.Carburant"/>
+              </div>  
+              <div class="form-group">
+                <label for="dispo">Disponible</label>
+                <input type="checkbox" id="dispo" asp-for="Car.Disponible"/>
+              </div>                  
+    
+        <input class="btn btn-primary" type="submit"/>
+        </form>
+
